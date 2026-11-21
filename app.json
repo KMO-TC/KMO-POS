@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "KMO-POS",
+    "slug": "KMO-POS",
+    "version": "2.1",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFFFFF"
+    },
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0755D8",
+        "foregroundImage": "./assets/adaptive-icon.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "com.kmo.KMOPOS"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro",
+      "output": "single"
+    },
+    "plugins": [
+      "@react-native-community/datetimepicker",
+      "./plugins/withProjectSplashIcon",
+      "expo-sqlite",
+      "expo-font"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "b89834a8-486a-4bcb-9f17-9eff2293def0"
+      }
+    },
+    "owner": "kyawmyatoo"
+  }
+}
