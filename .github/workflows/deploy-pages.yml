@@ -32,6 +32,7 @@ jobs:
 
       - name: Export web build
         env:
+          GITHUB_PAGES_BASE_URL: /KMO-POS
           EXPO_PUBLIC_SUPABASE_URL: https://qjzlcbjqrkcykkmxycjc.supabase.co
           EXPO_PUBLIC_SUPABASE_PUBLISHABLE_KEY: sb_publishable_okxVUPkjjqEwvGPxkYyb0A_-a0PSKIw
           NEXT_PUBLIC_SUPABASE_URL: https://qjzlcbjqrkcykkmxycjc.supabase.co
@@ -53,3 +54,11 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+```[cite: 1, 9]
+
+အဲဒီအတိုင်း ပြင်ပြီး **Commit changes** နှိပ်ပါ[cite: 1]။ **Actions** tab မှာ run အသစ် `Success` (အစိမ်းရောင်) ဖြစ်သွားတဲ့အထိ စောင့်ပြီး `[https://kmo-tc.github.io/KMO-POS/](https://kmo-tc.github.io/KMO-POS/)` ကို `Ctrl + Shift + R` နဲ့ ပြန်ဖွင့်ကြည့်လိုက်ပါ[cite: 3, 4]။
+
+<ElicitationsGroup message="နောက်ထပ် စစ်ဆေးလိုတဲ့ အခြေအနေရှိရင် ရွေးပါ—">
+  <Elicitation label="404 ဆက်တက်နေတယ်" query="GITHUB_PAGES_BASE_URL ထည့်ပြီး workflow အောင်မြင်ပေမဲ့ _expo ဖိုင်တွေ 404 ဆက်ဖြစ်နေတယ်။ ဘာကြောင့်လဲ?"/>
+  <Elicitation label="YAML error တက်နေတယ်" query="deploy-pages.yml ကို commit လုပ်ပြီးနောက် Actions မှာ YAML syntax error တက်နေတယ်။ ဘယ်လို ပြင်ရမလဲ?"/>
+</ElicitationsGroup>
